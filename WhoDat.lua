@@ -148,7 +148,7 @@ local SlashOptions = {
 
 local function registerGRMSlashCommandIfLoaded()
     if WhoDat.GRMUtil.IsGRMLoaded() then
-        WhoDat:Print(L["GRM is loaded - character import option is available"])
+        WhoDat:PrintDebugMsg(L["GRM is loaded - character import option is available"])
         ---@type AceConfig.OptionsTable
         local importCommand = {
             type = "execute",
@@ -207,7 +207,9 @@ function WhoDat:OnInitialize()
             end
             
             local nickname = self:GetNicknameForCharacter(unitName)
-            if frame.name and nickname and (frame.__wd_nickname ~= nickname or frame.__wd_nickname ~= frame.name:GetText()) then
+            if issecretvalue(frame.name:GetText()) then
+                self:PrintDebugMsg("FontString text is currently secret, exit gracefully")
+            elseif frame.name and nickname and (frame.__wd_nickname ~= nickname or frame.__wd_nickname ~= frame.name:GetText()) then
                 self:PrintDebugMsg("Setting unitName", UNCOMMON_GREEN_COLOR:WrapTextInColorCode(unitName), "to nickname", LEGENDARY_ORANGE_COLOR:WrapTextInColorCode(nickname))
                 frame.name:SetText(nickname)
                 frame.__wd_nickname = nickname
