@@ -80,8 +80,9 @@ function GRMUtil:CreateImportDialog()
     dialog.TitleText:SetText(L["WhoDat: GRM Import Tool"])
     dialog:SetFrameStrata("DIALOG")
     dialog:HookScript("OnHide", function(d)
-        if d.CharacterNameInput and d.CharacterNameInput:HasFocus() then
-            d.CharacterNameInput:ClearFocus()
+        ---@cast d WhoDatGRMImport
+        if d.CharInput and d.CharInput:HasFocus() then
+            d.CharInput:ClearFocus()
         end
     end)
     dialog:Hide()

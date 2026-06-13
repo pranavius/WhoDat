@@ -1,0 +1,16 @@
+{
+    "ignore": [".release/"],
+    "library": ["Libs/"],
+    "flavors": ["retail"],
+    "diagnostics": {
+        "disable": ["generic-constraint-mismatch"],
+        "severity": {
+            "missing-fields": "error",
+            "undefined-field": "info"
+        }
+    },
+    "globals": {
+        "read": ["WhoDat*", "WDUtils"],
+        "write": ["WhoDat*", "WDUtils", "GRM", "GRM_R", "GRM_API"]
+    }
+}

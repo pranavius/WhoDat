@@ -225,7 +225,7 @@ function WhoDat:OnInitialize()
 end
 
 ---Prints text when WhoDat is in debug mode
----@param...any Arguments to print to the chat window
+---@param ... any
 function WhoDat:PrintDebugMsg(...)
     if self.db.profile.debug then
 		self:Print(HEIRLOOM_BLUE_COLOR:WrapTextInColorCode("[Debug]"), ...)

@@ -1,5 +1,6 @@
 ---@class WhoDat: AceAddon, AceConsole-3.0, AceEvent-3.0
 ---@field categoryID number
+---@field db AceDBObject-3.0
 
 ---@class Locale: AceLocale-3.0
 
