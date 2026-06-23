@@ -14,10 +14,14 @@ jobs:
       WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
       GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Clone
+      - name: Clone repo
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Extract current version changelog
+        run: |
+          awk '/^\*\*'"${{ github.ref_name }}"'\*\*/{found=1} found{if(/^\*\*/ && !/^\*\*'"${{ github.ref_name }}"'\*\*/) exit; print}' CHANGELOG > CHANGELOG.tmp
+          mv CHANGELOG.tmp CHANGELOG
       - name: Package and release
         uses: BigWigsMods/packager@v2
         with:
