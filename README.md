@@ -1,9 +1,15 @@
 # WhoDat
 
-Formerly *Raid Frame Nicknames*
+*Replace character names with nicknames on your raid frames*
+
+Feedback on this AddOn or any others that I develop/maintain is always welcome. If you enjoy using any of my AddOns and would like to support future development, it is greatly appreciated.
 
 [![Discord](https://img.shields.io/badge/join-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/rqXW2cenWg)
+[![Linktree](https://img.shields.io/badge/connect-000000?style=for-the-badge&logo=linktree&logoColor=43E55E)](https://discord.gg/rqXW2cenWg)
 [![Patreon](https://img.shields.io/badge/support-F96854?style=for-the-badge&logo=patreon)](https://patreon.com/cw/Pranavius)
+[![Buy Me a Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=000000)](http://buymeacoffee.com/pranavius)
+
+---
 
 ## Summary
 **WhoDat** allows you to define a nickname for a character that will appear on their unit frame when they are in your party or raid. Multiple characters can be associated to a single nickname, so you can always tell which altoholic friend you're grouped up with regardless of what character they are playing on!
@@ -37,10 +43,3 @@ Options defined below are available for each existing nickname. The **Delete Nic
 
 ### Check Group Status
 `WDUtils.IsGroupedUp()` returns `true` when your character is in either a party or a raid, and `false` otherwise.
-
-## Connect
-Feedback on this AddOn or any others that I develop/maintain is always welcome. If you enjoy using any of my AddOns and would like to support future development, it is greatly appreciated.
-
-[![GitHub](https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github)](https://github.com/pranavius)
-[![X](https://img.shields.io/badge/@PranaviusWoW-000000?style=for-the-badge&logo=x)](https://x.com/PranaviusWoW)
-[![Email](https://img.shields.io/badge/email-ffffff?style=for-the-badge&logo=gmail)](mailto:pranavius1@gmail.com)
