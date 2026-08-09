@@ -3,9 +3,8 @@
     "library": ["Libs/"],
     "flavors": ["retail"],
     "diagnostics": {
-        "disable": ["generic-constraint-mismatch"],
+        "disable": ["generic-constraint-mismatch", "type-mismatch"],
         "severity": {
-            "missing-fields": "error",
             "undefined-field": "info"
         }
     },

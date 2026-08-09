@@ -1,5 +1,8 @@
+**1.1.2**
+- Updated for compatibility with Patch 12.1.0
+
 **1.1.1**
-- Updated compatibility for include Patch 12.0.7
+- Updated for compatibility with Patch 12.0.7
 - *Bug Fix:* Do not attempt to check if unit frame name matches nickname when the unit frame name value is secret
 
 **1.1.0**
