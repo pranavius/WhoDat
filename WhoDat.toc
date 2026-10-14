@@ -1,4 +1,4 @@
-## Interface: 120100, 120007
+## Interface: 120105
 ## Title: WhoDat
 ## Notes: Replace character names with nicknames on raid frames
 ## IconTexture: Interface\AddOns\WhoDat\Media\WhoDat-logo.png
